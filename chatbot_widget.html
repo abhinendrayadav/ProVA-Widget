@@ -1,0 +1,23 @@
+<html>
+    <body>
+            <div id="webchat">
+                    <script src='./static/js/webchat_script.js'></script>
+                    <script>
+                      WebChat.default.init({
+                        selector: "#webchat",
+                        initPayload: "hi",
+                        socketUrl: "http://localhost:5005/",
+                        socketPath: "/socket.io",
+                        title: "ProVA",
+                        subtitle: "Under Development",
+                        inputTextFieldHint: "I'm ProVA!",
+                        profileAvatar: './static/img/prova.png',     
+                        connecton: "open",
+                        storage: "local",
+                        showCloseButton: true,
+                        hideWhenNotConnected: false,
+                      });
+                    </script>
+                  </div>
+    </body>
+</html>
